@@ -109,16 +109,16 @@ void keyboardspecial(int key, int x, int y) {
 
     switch (key) {
         case GLUT_KEY_UP:
-			translateZ -= 0.1f;
+			translateZ -= 0.1f; //PULL Z
 			break;
         case GLUT_KEY_DOWN:
-			translateZ += 0.1f;
+			translateZ += 0.1f; //PUSH Z
 			break;
         case GLUT_KEY_LEFT:
-			translateX -= 0.1f;
+			translateX -= 0.1f; //PULL X
 			break;
         case GLUT_KEY_RIGHT:
-			translateX += 0.1f;
+			translateX += 0.1f; //PUSH X
 			break;
     }
 
@@ -128,22 +128,22 @@ void keyboardspecial(int key, int x, int y) {
 void keyboard(unsigned char key, int x, int y){
 	switch (key) {
 		case 's':
-			translateY -= 0.1f;
+			translateY -= 0.1f; //UP
 			break;
 		case 'w':
-			translateY += 0.1f;
+			translateY += 0.1f; //DOWN
 			break;
         case 'q':
-			rotateY -= 5.0f;
+			rotateY -= 5.0f; //ROTATE LEFT
 			break;
         case 'e':
-			rotateY += 5.0f;
+			rotateY += 5.0f; //ROTATE RIGHT
 			break;
         case 'z':
-			scaleHeight += 0.1f;
+			scaleHeight += 0.1f; //SCALE UPPER
 			break;
         case 'x':
-			scaleHeight -= 0.1f;
+			scaleHeight -= 0.1f; //SCALE DOWN
 			break;
     }
 	
